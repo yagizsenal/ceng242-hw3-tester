@@ -1,10 +1,10 @@
 #include <iostream>
 #include <Laptime.h>
 #include <sstream>
-#include <Car.h>
-#include <Utilizer.h>
-#include <Race.h>
-#include <Championship.h>
+#include "Car.h"
+#include "Utilizer.h"
+#include "Race.h"
+#include "Championship.h"
 
 bool VERBOSE = false;
 int FAIL_COUNT = 0;
@@ -346,7 +346,7 @@ void championshipTests() {
     printResult(cs1.getRaces().size() == 0);
 
     if (FAIL_COUNT > 0)
-        PRINT("\n" << "YOU HAVE FAILED IN " << FAIL_COUNT << " TESTS IN RACE" << "\n");
+        PRINT("\n" << "YOU HAVE FAILED IN " << FAIL_COUNT << " TESTS IN CHAMPIONSHIP" << "\n");
 
     TOTAL_FAILS += FAIL_COUNT;
     FAIL_COUNT = 0;
